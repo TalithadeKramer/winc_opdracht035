@@ -1,28 +1,28 @@
-let woord = ["nice", "awesome", "tof"];
-console.log(woord.length);
-
-
-let newLength = woord.push('cool');
+const woord = ["nice", "awesome", "tof"];
+const newLength = woord.push('cool');
 console.log(woord);
 
-console.log(woord.length);
+const fruit = ['appels', 'peren', 'citroenen'];
+console.log(fruit.length); // 3
 
-let first = woord[0];
-console.log(first);
+const land = ["Belgie", "Nederland", "Luxemburg"];
+console.log(land[0]);
 
-let last = woord[woord.length - 1];
-console.log(last);
+const dier = ["Haas", "Cavia", "Kip", "Schildpad"];
+console.log(dier[3]);
 
+const presidents = ["Trump", "Obama", "Bush", "Clinton"];
+let n = 1;
 
+const impeachTrumpSplice = presidents.splice(n);
+console.log(impeachTrumpSplice); // ["Obama", "Bush", "Clinton"]
 
-const presidents = ["Trump", "Obama", "Bush", "Clinton"] 
-  
-  const impeachTrumpSlice = function(array) {
-  presidents.splice
-  }
-  const impeachTrumpSplice = function(array) {
-        (...)
-  }
-  
-  console.log(impeachTrumpSlice(presidents)); // ["Obama", "Bush", "Clinton"]
-  console.log(impeachTrumpSplice(presidents)); // ["Obama", "Bush", "Clinton"]
+const impeachTrumpSlice = presidents.slice([1, -1]);
+console.log(impeachTrumpSlice); // ["Obama", "Bush", "Clinton"]
+
+const text = ['Winc', 'Academy', 'is', 'leuk', ';-}'];
+console.log(text.join(' '));
+
+const combineArrays1 = [1, 2, 3]
+const combineArrays2 = [4, 5, 6]
+console.log(combineArrays1.concat(combineArrays2))
